@@ -1,32 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="bootstrap.css">
-    <title>Resume</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="bootstrap.css">
+  <title>Resume</title>
+  <style>
+    html, body {
+      height: 100%;
+    }
+  </style>
 </head>
-<body>
-<div class="container">
-<header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
-  <a href="index.html" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
-    <span class="fs-4 text-primary">My Portfolio</span>
-  </a>
-  <ul class="nav nav-pills">
-    <li class="nav-item">
-      <a class="nav-link" href="index.html">Home</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="projects.html">Projects</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link active" aria-current="page"  href="resume.html">Resume</a>
-    </li>
+<body class="d-flex flex-column min-vh-100">
+<div class="container flex-grow-1 d-flex flex-column">
 
-  </ul>
-</header>
+  <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+    <a href="index.html" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+      <span class="fs-4 text-primary">My Portfolio</span>
+    </a>
+    <ul class="nav nav-pills">
+      <li class="nav-item">
+        <a class="nav-link" href="index.html">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="projects.html">Projects</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link active" aria-current="page" href="resume.html">Resume</a>
+      </li>
+    </ul>
+  </header>
 
-  <iframe src="Documents/Resume.pdf" width="100%" height="1200px"></iframe>
-
+  <main class="flex-grow-1">
+    <iframe src="Documents/Resume.pdf" width="100%" height="1200px" style="border: none;"></iframe>
+  </main>
 
   <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
     <div class="col-md-4 d-flex align-items-center">
@@ -49,6 +55,7 @@
       </li>
     </ul>
   </footer>
+
 </div>
 </body>
 </html>
