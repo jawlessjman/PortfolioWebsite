@@ -43,7 +43,7 @@
     </div>
   </div>
 
-  <div class="row row-cols-3 g-2 justify-content-between" id="projects"></div>
+  <div class="row justify-content-evenly" id="projects"></div>
 
   <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
     <div class="col-md-4 d-flex align-items-center">
@@ -131,14 +131,14 @@
     {
       index: 4,
       title : "FormatX -> Go",
-      image: "Images/FormatX.png",
+      image: "Images/FormatX_mobile.png",
       brief: "React Native Expo application for manipulating PDF files.",
       description: "FormatX -> Go is a mobile frontend for FormatX, a tool for merging, splitting, converting, and more to PDFs. FormatI acts a mobile frontend to this service allowing users to manipulate their PDFs on the go. This project is still in active development.",
       type: "React Native Expo application",
-      languages: ["React-Native", "Expo", "TypeScript", "JavaScript", "Swift", "Kotlin"],
+      languages: ["React-Native", "Expo", "TypeScript", "JavaScript"],
       authors: ["Jared Johnston", "Blazzzin"],
       isLink : false,
-      link : "Currently Private until release build is ready."
+      link : "In active development."
     },
     {
       index: 5,
@@ -291,7 +291,7 @@
     const container = document.getElementById("projects")
     function createProject(element){
         const card = document.createElement("div");
-        card.classList.add("card", "shadow", "col-12", "col-md-6", "col-lg-4");
+        card.classList.add("card", "shadow", "col-5", "m-2", "p-2");
         const img = document.createElement("img");
         img.src = element.image;
         img.classList.add("card-img-top", "img-fluid", "w-100", "image");
