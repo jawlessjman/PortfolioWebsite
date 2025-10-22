@@ -46,7 +46,7 @@
   {
     "title": "FormatX -> Go",
     "shortDescription": "React Native Expo app for manipulating PDF files",
-    "imageUrl": "Images/FormatX_mobile.png",
+    "imageUrl": "Images/FormatX_go.png",
     "authors": ["Jared Johnston", "Blazzzin"],
     "projectType": "React Native Expo Application",
     "languagesUsed": ["React-Native", "Expo", "TypeScript", "JavaScript"],
