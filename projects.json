@@ -1,0 +1,156 @@
+[
+  {
+    "title": "2D Metroidvania game",
+    "shortDescription": "2D action adventure game created using C# and DirectX",
+    "imageUrl": "Images/Learn_nerd.gif",
+    "authors": ["Jared Johnston", "Wisepenguin"],
+    "projectType": "C# DirectX 2D Game",
+    "languagesUsed": ["C#", "Unity"],
+    "longDescription": "This is a 2D Metroidvania game that is a passion project between me and a friend. We have been working on it for a couple years but only on our off time.",
+    "status": "In progress",
+    "repoLink": ""
+  },
+  {
+    "title": "JawlessBOT",
+    "shortDescription": "Discord Bot with media and administrative features",
+    "imageUrl": "Images/JawlessBOT.png",
+    "authors": ["Jared Johnston"],
+    "projectType": "Discord.py Discord Bot",
+    "languagesUsed": ["Python", "SQL"],
+    "longDescription": "JawlessBot is a verified Discord bot that allows for playing media in voice calls, basic administrative actions such as banning, kicking, and warning users, and other fun commands. It is hosted using AWS and in continuous development since March 2024.",
+    "status": "Active development",
+    "repoLink": "https://github.com/jawlessjman/Jawless_bot"
+  },
+  {
+    "title": "OpenGL TileMapEditor",
+    "shortDescription": "OpenGL Application for creating tile-based maps",
+    "imageUrl": "Images/TileMapEditor.png",
+    "authors": ["Jared Johnston"],
+    "projectType": "C++ OpenGL Project",
+    "languagesUsed": ["C++", "C"],
+    "longDescription": "This OpenGL tile map editor is designed for creating 2D grid-based tile maps. It was created to learn OpenGL and help develop a game. The project is no longer being worked on.",
+    "status": "Inactive",
+    "repoLink": "https://github.com/jawlessjman/LearnNerdTileMapEditor"
+  },
+  {
+    "title": "Swift HTTP",
+    "shortDescription": "Swift package created for making HTTP requests easy",
+    "imageUrl": "Images/Swift.png",
+    "authors": ["Jared Johnston"],
+    "projectType": "Swift Package",
+    "languagesUsed": ["Swift"],
+    "longDescription": "This Swift package simplifies making HTTP requests. It was created to reduce code repetition in different Swift projects. It will be made public once stable.",
+    "status": "In progress",
+    "repoLink": ""
+  },
+  {
+    "title": "FormatX -> Go",
+    "shortDescription": "React Native Expo app for manipulating PDF files",
+    "imageUrl": "Images/FormatX_mobile.png",
+    "authors": ["Jared Johnston", "Blazzzin"],
+    "projectType": "React Native Expo Application",
+    "languagesUsed": ["React-Native", "Expo", "TypeScript", "JavaScript"],
+    "longDescription": "FormatX -> Go is a mobile frontend for FormatX, a tool for merging, splitting, and converting PDFs. It allows users to manipulate PDFs on mobile. Currently in active development.",
+    "status": "Active development",
+    "repoLink": ""
+  },
+  {
+    "title": "Swift Memory Game",
+    "shortDescription": "Swift iOS application for a memory game",
+    "imageUrl": "Images/Memory.png",
+    "authors": ["Jared Johnston"],
+    "projectType": "Native Swift iOS Application",
+    "languagesUsed": ["Swift"],
+    "longDescription": "A native iOS memory card game where players must match identical cards within limited attempts. Includes a leaderboard. Not completed or in development.",
+    "status": "Inactive",
+    "repoLink": "https://github.com/jawlessjman/SwiftMemoryGame"
+  },
+  {
+    "title": "JawlessBOT - Website",
+    "shortDescription": "Website containing info and menus for JawlessBOT",
+    "imageUrl": "Images/JawlessBotWeb.png",
+    "authors": ["Jared Johnston"],
+    "projectType": "Website",
+    "languagesUsed": ["HTML", "CSS", "JavaScript"],
+    "longDescription": "Website hosting the privacy policy and terms for JawlessBOT, hosted on GitHub Pages. Future updates will add server-specific bot options.",
+    "status": "In progress",
+    "repoLink": "https://github.com/jawlessjman/JawlessBOT"
+  },
+  {
+    "title": "Sir Roland's Tower Quest",
+    "shortDescription": "Python text-based RPG remake of an old project",
+    "imageUrl": "Images/Roland.png",
+    "authors": ["Jared Johnston"],
+    "projectType": "Python Console Application",
+    "languagesUsed": ["Python"],
+    "longDescription": "Sir Roland's Tower Quest is a text-based RPG based on my grade 11 final project, rebuilt with improved code and design.",
+    "status": "Completed",
+    "repoLink": "https://github.com/jawlessjman/Sir-Roland-s-Tower-Quest"
+  },
+  {
+    "title": "DeepSeek Discord Bot",
+    "shortDescription": "Discord bot for talking with a local DeepSeek Ollama instance",
+    "imageUrl": "Images/DeepSeek.png",
+    "authors": ["Jared Johnston"],
+    "projectType": "Discord.py Discord Bot",
+    "languagesUsed": ["Python"],
+    "longDescription": "A Discord bot that connects to a local DeepSeek instance via Ollama, allowing chat-based interactions through Discord commands.",
+    "status": "Completed",
+    "repoLink": "https://github.com/jawlessjman/Discord-DeepSeek-bot"
+  },
+  {
+    "title": "Smart Crafting Display",
+    "shortDescription": "Minecraft 1.21 Forge Mod featuring an item overlay",
+    "imageUrl": "Images/Minecraft.png",
+    "authors": ["Jared Johnston", "Blazzzin"],
+    "projectType": "Minecraft 1.21 Forge Mod",
+    "languagesUsed": ["Java"],
+    "longDescription": "Smart Crafting Display is a Minecraft Forge mod that adds an overlay showing required crafting materials and progress. Still in active development.",
+    "status": "Active development",
+    "repoLink": ""
+  },
+  {
+    "title": "Pokemon Brick Bronze Auto",
+    "shortDescription": "Python app automating legendary Pokémon captures",
+    "imageUrl": "Images/Poke.png",
+    "authors": ["Jared Johnston"],
+    "projectType": "Python Application",
+    "languagesUsed": ["Python", "PyTorch"],
+    "longDescription": "This Python program automates capturing legendary Pokémon by identifying encounters and responding accordingly. Uses PyTorch and webhooks.",
+    "status": "Active development",
+    "repoLink": ""
+  },
+  {
+    "title": "Jordle",
+    "shortDescription": "Wordle clone with new game modes and leaderboards",
+    "imageUrl": "Images/Jordle.png",
+    "authors": ["Jared Johnston"],
+    "projectType": "Discord Embedded Application",
+    "languagesUsed": ["HTML", "CSS", "JavaScript", "TypeScript"],
+    "longDescription": "Jordle is a Discord-based Wordle clone featuring leaderboards, difficulty modes, and free-play options. Built with the Discord Embedded SDK.",
+    "status": "Active development",
+    "repoLink": ""
+  },
+  {
+    "title": "My Portfolio Website",
+    "shortDescription": "This website showcasing my work and resume",
+    "imageUrl": "Images/Port.png",
+    "authors": ["Jared Johnston"],
+    "projectType": "Portfolio Website",
+    "languagesUsed": ["HTML", "CSS", "JavaScript"],
+    "longDescription": "My portfolio website containing details about me, projects I’ve built, and my resume. You’re currently viewing it!",
+    "status": "Completed",
+    "repoLink": "https://github.com/jawlessjman/PortfolioWebsite"
+  },
+  {
+    "title": "Payulator",
+    "shortDescription": "Web and mobile app for managing shared expenses",
+    "imageUrl": "Images/payulator.png",
+    "authors": ["Jared Johnston"],
+    "projectType": "Web Application",
+    "languagesUsed": ["TypeScript", "C#", "React-Native", "MongoDB", "Docker"],
+    "longDescription": "Payulator is a full-stack expense management tool using a C# backend and a React Native frontend built with Expo. Designed for group expense tracking.",
+    "status": "In progress",
+    "repoLink": ""
+  }
+]

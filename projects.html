@@ -26,24 +26,35 @@
     </ul>
   </header>
 
-  <div class="modal fade" id="textModal" tabindex="-1" aria-labelledby="textModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="modalLabel">Project Title</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body" id="modalText">
-
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-          </div>
+  <div class="modal fade" id="projectModal" tabindex="-1" aria-labelledby="projectModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content border-0 shadow-lg">
+        <div class="modal-header">
+          <h5 id="projectModalLabel" class="modal-title fw-bold"></h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
+        <div class="modal-body">
+          <img id="projectImage" class="img-fluid rounded mb-3 shadow-sm" alt="Project image" >
+          <p id="projectLongDescription" class="mb-3"></p>
+          <p><strong>Type:</strong> <span id="projectType"></span></p>
+          <p><strong>Languages:</strong> <span id="projectLanguages"></span></p>
+          <p><strong>Authors:</strong> <span id="projectAuthors"></span></p>
+          <p><strong>Status:</strong> <span id="projectStatus"></span></p>
+        </div>
+        <div class="modal-footer">
+          <a id="repoLink" href="#" target="_blank" class="btn btn-outline-primary">
+            <svg class="bi" width="1em" height="1em" viewBox="0 0 16 16" fill="#FFF">
+              <use xlink:href="assets/bootstrap-icons/bootstrap-icons.svg#github"></use>
+            </svg>
+            View Repository
+          </a>
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
     </div>
   </div>
 
-  <div class="row justify-content-evenly" id="projects"></div>
+  <div class="row g-4" id="projects"></div>
 
   <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
     <div class="col-md-4 d-flex align-items-center">
@@ -79,258 +90,69 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
 <script>
-  const moreInformation = [
-    {
-      index: 0,
-      title : "2D Metroidvania game",
-      image: "Images/Learn_nerd.gif",
-      brief: "2D action adventure game created using C# and directX",
-      description : "This is a 2d metroidvania game that is a passion project between me and a friend. We have been working on it for a couple years but only on our off time.",
-      type: "C# DirectX 2D Game",
-      languages: ["C#", "Unity"],
-      authors: ["Jared Johnston", "Wisepenguin"],
-      isLink : false,
-      link : "The repository is stored using Unity's Version control system."
-    },
-    {
-      index: 1,
-      title : "JawlessBOT",
-      image: "Images/JawlessBOT.png",
-      brief: "Discord Bot with media and administrative features",
-      description : "JawlessBot is a verified discord bot that allows for playing media in voice calls, basic administrative actions such as banning, kicking, and warning users, and other fun commands. I created this to expand my knowledge on asynchronous applications and for fun. This bot is currently being hosted using AWS. This project is in continuous development since March 2024.",
-      type: "Discord.py Discord Bot",
-      languages: ["Python", "SQL"],
-      authors: ["Jared Johnston"],
-      isLink : true,
-      link : "https://github.com/jawlessjman/Jawless_bot"
-    },
-    {
-      index: 2,
-      title : "OpenGL TileMapEditor",
-      image: "Images/TileMapEditor.png",
-      brief: "OpenGl Application for creating tile based maps",
-      description : "This OpenGL tile map editor is designed for creating 2D grid based tile maps. The main purpose of this editor was to create maps for a game and to learn how to use OpenGL. This project is not finished and is no longer being worked on.",
-      type: "C++ OpenGL Project",
-      languages: ["C++", "C"],
-      authors: ["Jared Johnston"],
-      isLink : true,
-      link : "https://github.com/jawlessjman/LearnNerdTileMapEditor"
-    },
-    {
-      index: 3,
-      title : "Swift HTTP",
-      image: "Images/Swift.png",
-      brief: "Swift package created for making http requests easy",
-      description: "This Swift package is designed to make HTTP requests in swift easier. During school assignments and personal projects I kept writing the same code over and over for different HTTP requests so I decided to create a package that I can use in all my projects. I have decided to eventually make this a public package once I feel as though it's in a good state.",
-      type: "Swift Package",
-      languages: ["Swift"],
-      authors: ["Jared Johnston"],
-      isLink : false,
-      link : "Currently set to private until I feel it's in good condition to be public"
-    },
-    {
-      index: 4,
-      title : "FormatX -> Go",
-      image: "Images/FormatX_mobile.png",
-      brief: "React Native Expo application for manipulating PDF files.",
-      description: "FormatX -> Go is a mobile frontend for FormatX, a tool for merging, splitting, converting, and more to PDFs. FormatI acts a mobile frontend to this service allowing users to manipulate their PDFs on the go. This project is still in active development.",
-      type: "React Native Expo application",
-      languages: ["React-Native", "Expo", "TypeScript", "JavaScript"],
-      authors: ["Jared Johnston", "Blazzzin"],
-      isLink : false,
-      link : "In active development."
-    },
-    {
-      index: 5,
-      title : "Swift Memory Game",
-      image: "Images/Memory.png",
-      brief: "Swift iOS application for a memory game",
-      description: "This is a native iOS memory game. The game consists of matching cards that are identical. The location of these cards are shown when the game starts but quickly flip over, the goal is to match all the cards. However you only have a limited amount of attempts. This game has a leaderboard for who wins the fastest and with the least fails. This project is not completed and not in development.",
-      type: "Native Swift iOS application",
-      languages: ["Swift"],
-      authors: ["Jared Johnston"],
-      isLink : true,
-      link : "https://github.com/jawlessjman/SwiftMemoryGame"
-    },
-    {
-      index: 6,
-      title : "JawlessBOT - Website",
-      image: "Images/JawlessBotWeb.png",
-      brief: "Website containing information and menus related to JawlessBOT",
-      description: "This is a website created to host the privacy policy and terms of service for my discord bot. It is hosted via github pages. The website will soon have additional functionality that pertains to JawlessBOT. This functionality will include options for the bot in your specific servers. This website will be back in development soon.",
-      type: "Website",
-      languages: ["HTML", "CSS", "JavaScript"],
-      authors: ["Jared Johnston"],
-      isLink : true,
-      link : "https://github.com/jawlessjman/JawlessBOT"
-    },
-    {
-      index: 7,
-      title : "Sir Roland's Tower Quest",
-      image: "Images/Roland.png",
-      brief: "Python text based RPG - Remake of a old assignment",
-      description: "Sir Roland's Tower Quest is a text based RPG based on my grade 11 final CPT. Looking back at my old code from grade 11 I have seen how far I have come. Which is why I decided to remake the code using the knowledge I gained.",
-      type: "Python console application",
-      languages: ["Python"],
-      authors: ["Jared Johnston"],
-      isLink : true,
-      link : "https://github.com/jawlessjman/Sir-Roland-s-Tower-Quest"
-    },
-    {
-      index: 8,
-      title : "DeepSeek Discord Bot",
-      image: "Images/DeepSeek.png",
-      brief: "Discord Bot for talking with an Ollama instance of DeepSeek",
-      description: "This is a discord bot the can be used with a local installed of DeepSeek via Ollama to use DeepSeek AI via a discord command. The repository contains information on how installation and use.",
-      type: "Discord.py Discord Bot",
-      languages: ["Python"],
-      authors: ["Jared Johnston"],
-      isLink : true,
-      link : "https://github.com/jawlessjman/Discord-DeepSeek-bot"
-    },
-    {
-      index: 9,
-      title : "Smart Crafting Display",
-      image: "Images/Minecraft.png",
-      brief: "Minecraft 1.21 Mod using Forge - Featuring a items overlay",
-      description: "Smart Crafting Display is a Minecraft 1.21 Mod using the Forge API in order to create an overlay that contains the items required to craft an item. When crafting an item you can click an assigned key in order for the mod to know which item you wish to craft, then the mod will calculate the items required and display them on the overlay with progress bar informing you of how many items you have and need. This mod is in active development.",
-      type: "Minecraft 1.21 Forge Mod",
-      languages: ["Java"],
-      authors: ["Jared Johnston", "Blazzzin"],
-      isLink : false,
-      link : "Repository is private until the mod is completed"
-    },
-    {
-      index: 10,
-      title : "Pokemon Brick Bronze Auto",
-      image: "Images/Poke.png",
-      brief: "Application created to automate the capture of legendary pokemon",
-      description: "Brick Bronze Auto is a python program that allows the user to automate the capturing of legendary pokemon. The program will automatically detect the pokemon you are fighting, and based on that will decide to either run away, attack using certain moves, or capture it. This program uses PyTorch in order to determine the items, moves, and pokemon you are battling. The program upon finding a legendary pokemon will message the user using a webhook. This program is still in active development.",
-      type: "Python Application",
-      languages: ["Python", "PyTorch"],
-      authors: ["Jared Johnston"],
-      isLink : false,
-      link : "Currently Private until I optimize and complete it."
-    },
-    {
-      index: 11,
-      title : "Jordle",
-      image: "Images/Jordle.png",
-      brief: "Jordle - A clone of Wordle with additional game-modes and features",
-      description: "Jordle is a clone of Wordle using the Discord Embedded Application SDK. Jordle contains 3 additional features that Wordle does not have, for one there is now a Free-play option so you can play as many times as you like. Two there is now a leaderboard where one can compete with other users to climb the ranks, the rankings are based on the win streak and total wins. Three, Jordle has 3 difficulties these being easy, medium, and hard, each difficulty has a different number of letters per word. This project is in active development.",
-      type: "Discord embed application",
-      languages: ["HTML", "CSS", "JavaScript", "TypeScript"],
-      authors: ["Jared Johnston"],
-      isLink : false,
-      link : "Repository is private until the game is completed"
-    },
-    {
-      index: 12,
-      title : "My Portfolio Website",
-      image: "Images/Port.png",
-      brief: "You are currently on my Portfolio Website",
-      description: "My Portfolio website containing information about me, projects I am and have worked on, and my resume. You are currently on this website.",
-      type: "Portfolio Website",
-      languages: ["HTML", "CSS", "JavaScript"],
-      authors: ["Jared Johnston"],
-      isLink : true,
-      link : "https://github.com/jawlessjman/PortfolioWebsite"
-    },
-    {
-      index: 13,
-      title : "Payulator",
-      image: "Images/payulator.png",
-      brief: "Website and app for managing shared expenses",
-      description: "Payulator is a full stack application for managing group expenses The app uses a C# server as the backend and using a React-Native web app using expo.",
-      type: "Web application",
-      languages: ["Typescript", "C#", "React-Native", "MongoDB", "Docker"],
-      authors: ["Jared Johnston"],
-      isLink : false,
-      link : "This project is still currently being worked on"
-    }
-  ];
+  async function loadProjects() {
+    try {
+      const response = await fetch("projects.json");
+      if (!response.ok) return;
 
-  function showMore(index) {
-    const element = moreInformation[index] || null;
-    if (!element) {
-      return;
+      const projects = await response.json();
+      const grid = document.getElementById("projects");
+
+      projects.forEach((project, index) => {
+        const card = document.createElement("div");
+        card.className = "col-12 col-md-6 col-lg-4";
+
+        card.innerHTML = `
+        <div class="card h-100 shadow-sm border-0 p-2">
+          <img src="${project.imageUrl}" class="card-img-top" style="height: 250px; object-fit: cover;" alt="${project.title}">
+          <div class="card-body">
+            <h5 class="card-title fw-bold">${project.title}</h5>
+            <p class="card-text text-muted">${project.shortDescription}</p>
+          </div>
+          <div class="card-footer bg-transparent border-0">
+            <button class="btn btn-primary w-100" data-index="${index}">View Details</button>
+          </div>
+        </div>
+      `;
+
+        grid.appendChild(card);
+      });
+
+      // Add modal logic
+      document.querySelectorAll("[data-index]").forEach((btn) => {
+        btn.addEventListener("click", (e) => {
+          const project = projects[e.target.getAttribute("data-index")];
+          showProjectModal(project);
+        });
+      });
+    } catch (error) {
+      console.error("Error loading projects:", error);
+    }
+  }
+
+  function showProjectModal(project) {
+    document.getElementById("projectModalLabel").textContent = project.title;
+    document.getElementById("projectImage").src = project.imageUrl;
+    document.getElementById("projectLongDescription").textContent = project.longDescription;
+    document.getElementById("projectType").textContent = project.projectType;
+    document.getElementById("projectLanguages").textContent = project.languagesUsed.join(", ");
+    document.getElementById("projectAuthors").textContent = project.authors.join(", ");
+    document.getElementById("projectStatus").textContent = project.status;
+
+    const repoLink = document.getElementById("repoLink");
+    if (project.repoLink) {
+      repoLink.href = project.repoLink;
+      repoLink.classList.remove("disabled");
+    } else {
+      repoLink.href = "#";
+      repoLink.classList.add("disabled");
     }
 
-    document.getElementById("modalLabel").textContent = element.title;
-
-    const body = document.getElementById("modalText");
-    body.innerHTML = ""; // Clear existing content
-
-    // Create and append image
-    const image = document.createElement("img");
-    image.src = element.image;
-    image.className = "img-fluid mb-3 w-100";
-    body.appendChild(image);
-
-    // Create and append text
-    let content = `
-    <p><strong>Authors:</strong> ${element.authors.join(", ")}</p>
-    <p><strong>Project type:</strong> ${element.type}</p>
-    <p><strong>Languages used:</strong> ${element.languages.join(", ")}</p>
-    <p><strong>Description:</strong> ${element.description}</p>
-  `;
-    if (element.isLink) {
-      content += `<p><strong>Repo Link:</strong> <a href=${element.link}>Repository Link</a></p>`
-    }
-    else{
-      content += `<p><strong>Status:</strong> ${element.link}</p>`
-    }
-    body.innerHTML += content;
-
-    // Show the modal
-    const modal = new bootstrap.Modal(document.getElementById("textModal"));
+    const modal = new bootstrap.Modal(document.getElementById("projectModal"));
     modal.show();
   }
 
-  document.addEventListener("DOMContentLoaded", ()=>{
-    const container = document.getElementById("projects")
-    function createProject(element){
-        const card = document.createElement("div");
-        card.classList.add("card", "shadow", "col-5", "m-2", "p-2");
-        const img = document.createElement("img");
-        img.src = element.image;
-        img.classList.add("card-img-top", "img-fluid", "w-100", "image");
-        img.style.height = "250px";
-        img.style.objectFit = "cover"
-        img.alt = element.title;
-        card.appendChild(img);
-        const body = document.createElement("div");
-        body.classList.add("card-body");
-        const row = document.createElement("div");
-        row.classList.add("row");
-        const left = document.createElement("div");
-        left.classList.add("col");
-        const title = document.createElement("h5");
-        title.classList.add("card-title");
-        title.textContent = element.title;
-        const description = document.createElement("p");
-        description.textContent = element.brief
-        description.classList.add("card-text");
-        const right = document.createElement("div");
-        right.classList.add("col-md-4", "justify-content-end", "d-flex");
-        const button = document.createElement("button");
-        button.innerText = "More Info";
-        button.classList.add("btn-primary", "btn");
-        button.onclick = () => {showMore(element.index);};
-        right.appendChild(button);
-        left.appendChild(title);
-        left.appendChild(description);
-        row.appendChild(left);
-        row.appendChild(right);
-        body.appendChild(row);
-        card.appendChild(body);
-        container.appendChild(card);
-    }
-
-    moreInformation.forEach((element) => {
-      createProject(element);
-    });
-  })
+  document.addEventListener("DOMContentLoaded", loadProjects);
 
 </script>
 </html>

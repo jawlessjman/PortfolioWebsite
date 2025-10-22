@@ -2,3 +2,31 @@
     margin-top: 10px;
     max-height: 350px;
 }
+
+/* Modal adjustments */
+.modal-dialog {
+    max-height: 90vh;
+}
+
+.modal-content {
+    max-height: 90vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.modal-header,
+.modal-footer {
+    flex-shrink: 0; /* Keep header/footer visible */
+}
+
+.modal-body {
+    overflow-y: auto;
+    max-height: 70vh; /* Body scrollable */
+}
+
+/* Limit image height */
+#projectImage {
+    max-height: 300px;
+    width: 100%;
+    object-fit: cover;
+}
