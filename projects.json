@@ -1,6 +1,6 @@
 [
   {
-    "title": "2D Metroidvania game",
+    "title": "Project: Lost Light",
     "shortDescription": "2D action adventure game created using C# and DirectX",
     "imageUrl": "Images/Learn_nerd.gif",
     "authors": ["Jared Johnston", "Wisepenguin"],
@@ -16,7 +16,7 @@
     "imageUrl": "Images/JawlessBOT.png",
     "authors": ["Jared Johnston"],
     "projectType": "Discord.py Discord Bot",
-    "languagesUsed": ["Python", "SQL"],
+    "languagesUsed": ["Python", "MongoDB"],
     "longDescription": "JawlessBot is a verified Discord bot that allows for playing media in voice calls, basic administrative actions such as banning, kicking, and warning users, and other fun commands. It is hosted using AWS and in continuous development since March 2024.",
     "status": "Active development",
     "repoLink": "https://github.com/jawlessjman/Jawless_bot"
@@ -27,7 +27,7 @@
     "imageUrl": "Images/FiveProject.gif",
     "authors": ["Jared Johnston"],
     "projectType": "Unreal Game",
-    "languagesUsed": ["Unreal Engine 5.7"],
+    "languagesUsed": ["Unreal Engine 5.7", "C++"],
     "longDescription": "This is a recreation of the original Five Nights at Freddy's game using Unreal Engine 5.7. It is being built to learn Unreal Engine and game development principles. The project is still in active development.",
     "status": "Active development",
     "repoLink": ""
@@ -38,7 +38,7 @@
     "imageUrl": "Images/TileMapEditor.png",
     "authors": ["Jared Johnston"],
     "projectType": "C++ OpenGL Project",
-    "languagesUsed": ["C++", "C"],
+    "languagesUsed": ["C++", "C", "OpenGL"],
     "longDescription": "This OpenGL tile map editor is designed for creating 2D grid-based tile maps. It was created to learn OpenGL and help develop a game. The project is no longer being worked on.",
     "status": "Inactive",
     "repoLink": "https://github.com/jawlessjman/LearnNerdTileMapEditor"
@@ -115,20 +115,20 @@
     "imageUrl": "Images/Minecraft.png",
     "authors": ["Jared Johnston", "Blazzzin"],
     "projectType": "Minecraft 1.21 Forge Mod",
-    "languagesUsed": ["Java"],
+    "languagesUsed": ["Java", "Forge"],
     "longDescription": "Smart Crafting Display is a Minecraft Forge mod that adds an overlay showing required crafting materials and progress. Still in active development.",
-    "status": "Active development",
+    "status": "In Progress",
     "repoLink": ""
   },
   {
-    "title": "Pokemon Brick Bronze Auto",
+    "title": "Brick Bronze Auto",
     "shortDescription": "Python app automating legendary Pokémon captures",
     "imageUrl": "Images/Poke.png",
     "authors": ["Jared Johnston"],
     "projectType": "Python Application",
     "languagesUsed": ["Python", "PyTorch"],
     "longDescription": "This Python program automates capturing legendary Pokémon by identifying encounters and responding accordingly. Uses PyTorch and webhooks.",
-    "status": "Active development",
+    "status": "In Progress",
     "repoLink": ""
   },
   {
@@ -139,7 +139,7 @@
     "projectType": "Discord Embedded Application",
     "languagesUsed": ["HTML", "CSS", "JavaScript", "TypeScript"],
     "longDescription": "Jordle is a Discord-based Wordle clone featuring leaderboards, difficulty modes, and free-play options. Built with the Discord Embedded SDK.",
-    "status": "Active development",
+    "status": "In Progress",
     "repoLink": ""
   },
   {
