@@ -22,6 +22,17 @@
     "repoLink": "https://github.com/jawlessjman/Jawless_bot"
   },
   {
+    "title": "FNAF Recreation",
+    "shortDescription": "Unreal engine 5.7 Five Nights at Freddy's recreation",
+    "imageUrl": "Images/FiveProject.gif",
+    "authors": ["Jared Johnston"],
+    "projectType": "Unreal Game",
+    "languagesUsed": ["Unreal Engine 5.7"],
+    "longDescription": "This is a recreation of the original Five Nights at Freddy's game using Unreal Engine 5.7. It is being built to learn Unreal Engine and game development principles. The project is still in active development.",
+    "status": "Active development",
+    "repoLink": ""
+  },
+  {
     "title": "OpenGL TileMapEditor",
     "shortDescription": "OpenGL Application for creating tile-based maps",
     "imageUrl": "Images/TileMapEditor.png",
