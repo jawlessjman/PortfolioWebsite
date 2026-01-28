@@ -2,22 +2,19 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="bootstrap.css">
+  <link rel="stylesheet" href="styles.css">
   <link rel="icon" href="Images/favicon.png" type="image/png">
   <title>Resume</title>
-  <style>
-    html, body {
-      height: 100%;
-    }
-  </style>
 </head>
-<body class="d-flex flex-column min-vh-100">
-<div class="container flex-grow-1 d-flex flex-column">
-  <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
-    <a href="index.html" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
-      <span class="fs-4 text-primary">Jared Johnston</span>
+<body class="page-container d-flex flex-column">
+<div class="container flex-grow-1 d-flex flex-column py-3">
+  <header class="nav-shell d-flex flex-wrap justify-content-center align-items-center py-3 mb-4">
+    <a href="index.html" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-decoration-none">
+      <span class="fs-4 brand-mark">Jared Johnston</span>
     </a>
-    <ul class="nav nav-pills">
+    <ul class="nav nav-pills gap-2">
       <li class="nav-item">
         <a class="nav-link" href="index.html">Home</a>
       </li>
@@ -30,32 +27,45 @@
     </ul>
   </header>
 
-  <main class="flex-grow-1 text-center align-content-center justify-content-center">
-    <iframe src="Documents/Resume.pdf" width="100%" height="100%" style="border: none;" title="Resume PDF document"></iframe>
+  <main class="flex-grow-1">
+    <div class="glass-card p-4 mb-3">
+      <div class="d-flex flex-wrap justify-content-between align-items-center gap-3">
+        <div>
+          <div class="pill mb-2"><span class="pill-dot"></span> Up-to-date CV</div>
+          <h2 class="mb-1">Resume</h2>
+          <p class="subtle-text mb-0">View inline or download a copy. Best experienced on desktop or landscape mobile.</p>
+        </div>
+        <a class="btn btn-glow" href="Documents/Resume.pdf" download>Download PDF</a>
+      </div>
+    </div>
+
+    <div class="resume-frame" style="min-height: 85vh;">
+      <iframe src="Documents/Resume.pdf" width="100%" height="100%" style="border: none; min-height: 100vh;" title="Resume PDF document"></iframe>
+    </div>
   </main>
 
-  <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+  <footer class="footer-shell d-flex flex-wrap justify-content-between align-items-center py-3 mt-4">
     <div class="col-md-4 d-flex align-items-center">
-      <a href="projects.html" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">My Projects</a>
+      <a href="projects.html" class="mb-0 text-decoration-none text-muted">See projects</a>
     </div>
     <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
       <li class="ms-3">
-        <a class="text-body-secondary" href="mailto:jaredj@jaredjohnston.com">
-          <svg class="bi" width="1em" height="1em" viewBox="0 0 16 16" fill="#FFF">
+        <a class="icon-btn" aria-label="Email" href="mailto:jared@jaredjohnston.com">
+          <svg class="bi" viewBox="0 0 16 16">
             <use xlink:href="assets/bootstrap-icons/bootstrap-icons.svg#envelope-fill"></use>
           </svg>
         </a>
       </li>
       <li class="ms-3">
-        <a class="text-body-secondary" href="https://www.linkedin.com/in/jared-johnston-b11290301/">
-          <svg class="bi" width="1em" height="1em" viewBox="0 0 16 16" fill="#FFF">
+        <a class="icon-btn" aria-label="LinkedIn" href="https://www.linkedin.com/in/jared-johnston-b11290301/">
+          <svg class="bi" viewBox="0 0 16 16">
             <use xlink:href="assets/bootstrap-icons/bootstrap-icons.svg#linkedin"></use>
           </svg>
         </a>
       </li>
       <li class="ms-3">
-        <a class="text-body-secondary" href="https://github.com/jawlessjman">
-          <svg class="bi" width="1em" height="1em" viewBox="0 0 16 16" fill="#FFF">
+        <a class="icon-btn" aria-label="GitHub" href="https://github.com/jawlessjman">
+          <svg class="bi" viewBox="0 0 16 16">
             <use xlink:href="assets/bootstrap-icons/bootstrap-icons.svg#github"></use>
           </svg>
         </a>

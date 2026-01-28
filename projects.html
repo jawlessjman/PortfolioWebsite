@@ -2,18 +2,20 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="projects.css">
     <link rel="icon" href="Images/favicon.png" type="image/png">
     <title>Projects</title>
 </head>
-<body>
-<div class="container">
-  <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
-    <a href="index.html" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
-      <span class="fs-4 text-primary">Jared Johnston</span>
+<body class="page-container d-flex flex-column">
+<div class="container flex-grow-1 d-flex flex-column py-3">
+  <header class="nav-shell d-flex flex-wrap justify-content-center align-items-center py-3 mb-4">
+    <a href="index.html" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-decoration-none">
+      <span class="fs-4 brand-mark">Jared Johnston</span>
     </a>
-    <ul class="nav nav-pills">
+    <ul class="nav nav-pills gap-2">
       <li class="nav-item">
         <a class="nav-link" href="index.html">Home</a>
       </li>
@@ -28,10 +30,10 @@
 
   <div class="modal fade" id="projectModal" tabindex="-1" aria-labelledby="projectModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg modal-dialog-centered">
-      <div class="modal-content border-0 shadow-lg">
-        <div class="modal-header">
+      <div class="modal-content border-0 shadow-lg glass-card">
+        <div class="modal-header border-0">
           <h5 id="projectModalLabel" class="modal-title fw-bold"></h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
           <img id="projectImage" class="img-fluid rounded mb-3 shadow-sm" alt="Project image" >
@@ -41,8 +43,8 @@
           <p><strong>Authors:</strong> <span id="projectAuthors"></span></p>
           <p><strong>Status:</strong> <span id="projectStatus"></span></p>
         </div>
-        <div class="modal-footer">
-          <a id="repoLink" href="#" target="_blank" class="btn btn-outline-primary">
+        <div class="modal-footer border-0">
+          <a id="repoLink" href="#" target="_blank" class="btn btn-ghost">
             <svg class="bi" width="1em" height="1em" viewBox="0 0 16 16" fill="#FFF">
               <use xlink:href="assets/bootstrap-icons/bootstrap-icons.svg#github"></use>
             </svg>
@@ -54,30 +56,42 @@
     </div>
   </div>
 
-  <div class="row g-4" id="projects"></div>
+  <main class="flex-grow-1">
+    <section class="glass-card p-4 mb-4">
+      <div class="d-flex flex-wrap justify-content-between align-items-center gap-3">
+        <div>
+          <div class="pill mb-2"><span class="pill-dot"></span> 14 projects across games, bots, and apps</div>
+          <h2 class="mb-1">Projects</h2>
+          <p class="subtle-text mb-0">Curated work spanning mobile, backend helpers, and playful experiments. Tap a card to see details.</p>
+        </div>
+      </div>
+    </section>
 
-  <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+    <div class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-4" id="projects"></div>
+  </main>
+
+  <footer class="footer-shell d-flex flex-wrap justify-content-between align-items-center py-3 mt-4">
     <div class="col-md-4 d-flex align-items-center">
-      <a href="projects.html" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">My Projects</a>
+      <a href="projects.html" class="mb-0 text-decoration-none text-muted">Back to top</a>
     </div>
     <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
       <li class="ms-3">
-        <a class="text-body-secondary" href="mailto:jaredj@jaredjohnston.com">
-          <svg class="bi" width="1em" height="1em" viewBox="0 0 16 16" fill="#FFF">
+        <a class="icon-btn" aria-label="Email" href="mailto:jared@jaredjohnston.com">
+          <svg class="bi" viewBox="0 0 16 16">
             <use xlink:href="assets/bootstrap-icons/bootstrap-icons.svg#envelope-fill"></use>
           </svg>
         </a>
       </li>
       <li class="ms-3">
-        <a class="text-body-secondary" href="https://www.linkedin.com/in/jared-johnston-b11290301/">
-          <svg class="bi" width="1em" height="1em" viewBox="0 0 16 16" fill="#FFF">
+        <a class="icon-btn" aria-label="LinkedIn" href="https://www.linkedin.com/in/jared-johnston-b11290301/">
+          <svg class="bi" viewBox="0 0 16 16">
             <use xlink:href="assets/bootstrap-icons/bootstrap-icons.svg#linkedin"></use>
           </svg>
         </a>
       </li>
       <li class="ms-3">
-        <a class="text-body-secondary" href="https://github.com/jawlessjman">
-          <svg class="bi" width="1em" height="1em" viewBox="0 0 16 16" fill="#FFF">
+        <a class="icon-btn" aria-label="GitHub" href="https://github.com/jawlessjman">
+          <svg class="bi" viewBox="0 0 16 16">
             <use xlink:href="assets/bootstrap-icons/bootstrap-icons.svg#github"></use>
           </svg>
         </a>
@@ -100,17 +114,28 @@
 
       projects.forEach((project, index) => {
         const card = document.createElement("div");
-        card.className = "col-12 col-md-6 col-lg-4";
+        card.className = "col";
+
+        const statusClass = getStatusClass(project.status);
+        const languageBadges = project.languagesUsed
+          .map((lang) => `<span class="pill">${lang}</span>`)
+          .join("");
 
         card.innerHTML = `
-        <div class="card h-100 shadow-sm border-0 p-2">
-          <img src="${project.imageUrl}" class="card-img-top" style="height: 250px; object-fit: cover;" alt="${project.title}">
-          <div class="card-body">
-            <h5 class="card-title fw-bold">${project.title}</h5>
-            <p class="card-text text-muted">${project.shortDescription}</p>
+        <div class="project-card h-100">
+          <div class="project-thumb">
+            <img src="${project.imageUrl}" loading="lazy" alt="${project.title}">
           </div>
-          <div class="card-footer bg-transparent border-0">
-            <button class="btn btn-primary w-100" data-index="${index}">View Details</button>
+          <div class="p-3 card-content">
+            <div class="d-flex justify-content-between align-items-start gap-2 mb-2">
+              <h5 class="mb-0 fw-bold">${project.title}</h5>
+              <span class="status-chip ${statusClass}">${project.status}</span>
+            </div>
+            <p class="mb-3 subtle-text">${project.shortDescription}</p>
+            <div class="d-flex flex-wrap gap-2">${languageBadges}</div>
+          </div>
+          <div class="card-actions">
+            <button class="btn btn-ghost w-100" data-index="${index}">View details</button>
           </div>
         </div>
       `;
@@ -128,6 +153,13 @@
     } catch (error) {
       console.error("Error loading projects:", error);
     }
+  }
+
+  function getStatusClass(status) {
+    const normalized = status.toLowerCase();
+    if (normalized.includes("active")) return "status-active";
+    if (normalized.includes("progress")) return "status-progress";
+    return "status-inactive";
   }
 
   function showProjectModal(project) {
