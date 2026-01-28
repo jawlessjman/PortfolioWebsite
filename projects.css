@@ -12,6 +12,18 @@
     max-height: 90vh;
     display: flex;
     flex-direction: column;
+    color: #e8f0ff;
+    background: rgba(15, 30, 50, 0.95);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.modal-content .btn-close {
+    filter: invert(1) grayscale(100%);
+    opacity: 0.9;
+}
+
+.modal-content .btn-close:focus {
+    box-shadow: 0 0 0 2px rgba(123, 224, 176, 0.6);
 }
 
 .modal-header,
@@ -26,7 +38,9 @@
 
 /* Limit image height */
 #projectImage {
-    max-height: 300px;
+    max-height: 320px;
     width: 100%;
     object-fit: cover;
+    border-radius: 14px;
+    border: 1px solid rgba(255, 255, 255, 0.12);
 }

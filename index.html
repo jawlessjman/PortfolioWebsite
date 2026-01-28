@@ -2,22 +2,19 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="styles.css">
     <link rel="icon" href="Images/favicon.png" type="image/png">
     <title>Home</title>
-    <style>
-        html, body {
-            height: 100%;
-        }
-    </style>
 </head>
-<body class="d-flex flex-column min-vh-100">
-<div class="container flex-grow-1 d-flex flex-column">
-    <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
-        <a href="index.html" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
-            <span class="fs-4 text-primary">Jared Johnston</span>
+<body class="page-container d-flex flex-column">
+<div class="container flex-grow-1 d-flex flex-column py-3">
+    <header class="nav-shell d-flex flex-wrap justify-content-center align-items-center py-3 mb-4">
+        <a href="index.html" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-decoration-none">
+            <span class="fs-4 brand-mark">Jared Johnston</span>
         </a>
-        <ul class="nav nav-pills">
+        <ul class="nav nav-pills gap-2">
             <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="index.html">Home</a>
             </li>
@@ -30,37 +27,91 @@
         </ul>
     </header>
 
-    <main class="flex-grow-1 d-flex align-items-center justify-content-center text-center flex-column">
-        <h2>About Me</h2>
-        <img class="img-fluid m-2" style="height: 250px; object-fit: cover" src="Images/Default.png" alt="Image of me">
-        <h4>Hi I'm</h4>
-        <h2 class="text-primary"><strong>Jared Johnston</strong></h2>
-        <h4>4th Year Student at <strong>Sheridan College</strong></h4>
-        <h4>Studying Computer Science with a specialization in Mobile Computing</h4>
+    <main class="flex-grow-1">
+        <section class="hero glass-card">
+            <div class="row align-items-center g-4">
+                <div class="col-12 col-md-auto text-center text-md-start">
+                    <img class="avatar mb-3" src="Images/Default.png" alt="Portrait of Jared Johnston">
+                </div>
+                <div class="col">
+                    <div class="pill mb-3"><span class="pill-dot"></span> Mobile Computing @ Sheridan College</div>
+                    <h1 class="fw-bold mb-3">Hi, I'm Jared Johnston.</h1>
+                    <p class="lead subtle-text mb-4">
+                        4th year Computer Science student focused on building thoughtful mobile experiences,
+                        playful games, and tools that make developers move faster.
+                    </p>
+                    <div class="d-flex flex-wrap gap-2">
+                        <a class="btn btn-glow" href="projects.html">View Projects</a>
+                        <a class="btn btn-ghost" href="resume.html">Resume</a>
+                        <a class="btn btn-ghost" href="mailto:jared@jaredjohnston.com">Email me</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-gap">
+            <div class="section-heading">
+                <h5 class="mb-0 text-uppercase text-muted">What I build</h5>
+                <span></span>
+            </div>
+            <div class="row g-3">
+                <div class="col-12 col-md-4">
+                    <div class="stat-tile h-100">
+                        <h6 class="mb-1">Mobile & Apps</h6>
+                        <p class="mb-0 subtle-text">React Native + Swift with a focus on smooth user flows.</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="stat-tile h-100">
+                        <h6 class="mb-1">Bots & Tools</h6>
+                        <p class="mb-0 subtle-text">Discord automations, swift HTTP helpers, and developer utilities.</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="stat-tile h-100">
+                        <h6 class="mb-1">Games & 3D</h6>
+                        <p class="mb-0 subtle-text">Unreal, Unity, and C++ experiments that keep me creative.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-gap">
+            <div class="glass-card p-4">
+                <div class="d-flex flex-wrap justify-content-between align-items-center gap-3">
+                    <div>
+                        <div class="pill mb-2"><span class="pill-dot"></span> Currently exploring</div>
+                        <h4 class="mb-1">Smarter mobile tooling & playful AI assistants</h4>
+                        <p class="subtle-text mb-0">Experimenting with bots, mods, and utilities that make creative work feel effortless.</p>
+                    </div>
+                    <a class="btn btn-glow" href="projects.html">View Projects</a>
+                </div>
+            </div>
+        </section>
     </main>
 
-    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+    <footer class="footer-shell d-flex flex-wrap justify-content-between align-items-center py-3 mt-4">
         <div class="col-md-4 d-flex align-items-center">
-            <a href="projects.html" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">My Projects</a>
+            <a href="projects.html" class="mb-0 text-decoration-none text-muted">Browse all projects</a>
         </div>
         <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
             <li class="ms-3">
-                <a class="text-body-secondary" href="mailto:jaredj@jaredjohnston.com">
-                    <svg class="bi" width="1em" height="1em" viewBox="0 0 16 16" fill="#FFF">
+                <a class="icon-btn" aria-label="Email" href="mailto:jared@jaredjohnston.com">
+                    <svg class="bi" viewBox="0 0 16 16">
                         <use xlink:href="assets/bootstrap-icons/bootstrap-icons.svg#envelope-fill"></use>
                     </svg>
                 </a>
             </li>
             <li class="ms-3">
-                <a class="text-body-secondary" href="https://www.linkedin.com/in/jared-johnston-b11290301/">
-                    <svg class="bi" width="1em" height="1em" viewBox="0 0 16 16" fill="#FFF">
+                <a class="icon-btn" aria-label="LinkedIn" href="https://www.linkedin.com/in/jared-johnston-b11290301/">
+                    <svg class="bi" viewBox="0 0 16 16">
                         <use xlink:href="assets/bootstrap-icons/bootstrap-icons.svg#linkedin"></use>
                     </svg>
                 </a>
             </li>
             <li class="ms-3">
-                <a class="text-body-secondary" href="https://github.com/jawlessjman">
-                    <svg class="bi" width="1em" height="1em" viewBox="0 0 16 16" fill="#FFF">
+                <a class="icon-btn" aria-label="GitHub" href="https://github.com/jawlessjman">
+                    <svg class="bi" viewBox="0 0 16 16">
                         <use xlink:href="assets/bootstrap-icons/bootstrap-icons.svg#github"></use>
                     </svg>
                 </a>
