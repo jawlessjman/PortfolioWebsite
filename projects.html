@@ -23,7 +23,7 @@
         <a class="nav-link active" aria-current="page" href="projects.html">Projects</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="resume.html">Resume</a>
+        <a class="nav-link" href="https://www.linkedin.com/in/jared-johnston-b11290301/">Resume</a>
       </li>
     </ul>
   </header>
@@ -160,7 +160,9 @@
 
   function getStatusClass(status) {
     const normalized = status.toLowerCase();
+    if (normalized.includes("inactive")) return "status-inactive";
     if (normalized.includes("active")) return "status-active";
+    if (normalized.includes("completed")) return "status-completed";
     if (normalized.includes("progress")) return "status-progress";
     return "status-inactive";
   }
