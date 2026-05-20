@@ -110,6 +110,28 @@
     "repoLink": "https://github.com/jawlessjman/Discord-DeepSeek-bot"
   },
   {
+    "title" : "InfiniteAmmoGunz",
+    "shortDescription": "Mod for Valheim that gives players infinite ammo for guns from another mod `GunzNBullets`.",
+    "imageUrl": "Images/InfiniteAmmoGunz.jpg",
+    "authors": ["Jared Johnston"],
+    "projectType": "Valheim mod",
+    "languagesUsed": ["C#", "BepinEx"],
+    "longDescription": "InfiniteAmmoGunz is a Valheim mod that provides infinite ammunition for guns from the `GunzNBullets` mod. It is built using C# and the BepinEx modding framework. The project is completed and available on Nexus Mods.",
+    "status": "Completed",
+    "repoLink": "https://github.com/jawlessjman/InfiniteAmmoGunz"
+  },
+   {
+    "title" : "Passive Powers",
+    "shortDescription": "Mod for Valheim that gives players passive powers based on forsaken powers.",
+    "imageUrl": "Images/PassivePower.jpg",
+    "authors": ["Jared Johnston"],
+    "projectType": "Valheim mod",
+    "languagesUsed": ["C#", "BepinEx"],
+    "longDescription": "Passive Powers is a Valheim mod that grants players unique passive abilities inspired by the forsaken powers. It is built using C# and the BepinEx modding framework. The project is completed and available on Nexus Mods.",
+    "status": "Completed",
+    "repoLink": "https://github.com/jawlessjman/PassivePowers"
+  },
+  {
     "title": "Smart Crafting Display",
     "shortDescription": "Minecraft 1.21 Forge Mod featuring an item overlay",
     "imageUrl": "Images/Minecraft.png",
