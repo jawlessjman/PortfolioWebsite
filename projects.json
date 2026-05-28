@@ -143,6 +143,17 @@
     "repoLink": "https://github.com/jawlessjman/RageNAdrenaline"
   },
   {
+    "title" : "MoreArmorBonuses",
+    "shortDescription": "Valheim mod that adds additional armour set bonuses.",
+    "imageUrl": "Images/MoreArmorBonuses.jpg",
+    "authors": ["Jared Johnston"],
+    "projectType": "Valheim mod",
+    "languagesUsed": ["C#", "BepinEx"],
+    "longDescription": "MoreArmorBonuses is a Valheim mod that adds additional armour set bonuses and the ability to add custom armour set bonuses. It is built using C# and the BepinEx modding framework. The project is completed and available on Nexus Mods.",
+    "status": "Completed",
+    "repoLink": "https://github.com/jawlessjman/MoreArmorBonuses"
+  },
+  {
     "title": "Smart Crafting Display",
     "shortDescription": "Minecraft 1.21 Forge Mod featuring an item overlay",
     "imageUrl": "Images/Minecraft.png",
