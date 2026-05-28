@@ -1,7 +1,7 @@
 [
   {
     "title": "Project: Lost Light",
-    "shortDescription": "2D action adventure game created using C# and DirectX",
+    "shortDescription": "2D action adventure metroidvania game created using Unity",
     "imageUrl": "Images/Learn_nerd.gif",
     "authors": ["Jared Johnston", "Wisepenguin"],
     "projectType": "C# DirectX 2D Game",
@@ -29,7 +29,7 @@
     "projectType": "Unreal Game",
     "languagesUsed": ["Unreal Engine 5.7", "C++"],
     "longDescription": "This is a recreation of the original Five Nights at Freddy's game using Unreal Engine 5.7. It is being built to learn Unreal Engine and game development principles. The project is still in active development.",
-    "status": "Active development",
+    "status": "In Progress",
     "repoLink": ""
   },
   {
@@ -62,7 +62,7 @@
     "projectType": "React Native Expo Application",
     "languagesUsed": ["React-Native", "Expo", "TypeScript", "JavaScript"],
     "longDescription": "FormatX -> Go is a mobile frontend for FormatX, a tool for merging, splitting, and converting PDFs. It allows users to manipulate PDFs on mobile. Currently in active development.",
-    "status": "Active development",
+    "status": "In progress",
     "repoLink": ""
   },
   {
@@ -84,7 +84,7 @@
     "projectType": "Website",
     "languagesUsed": ["HTML", "CSS", "JavaScript"],
     "longDescription": "Website hosting the privacy policy and terms for JawlessBOT, hosted on GitHub Pages. Future updates will add server-specific bot options.",
-    "status": "In progress",
+    "status": "Completed",
     "repoLink": "https://github.com/jawlessjman/JawlessBOT"
   },
   {
@@ -176,6 +176,17 @@
     "repoLink": ""
   },
   {
+    "title": "ProjectTD",
+    "shortDescription": "Python OpenGL Application for a tower defense game",
+    "imageUrl": "Images/ProjectTD.png",
+    "authors": ["Jared Johnston"],
+    "projectType": "Python Application",
+    "languagesUsed": ["Python", "PyOpenGL", "OpenGL"],
+    "longDescription": "ProjectTD is a tower defense game built from the ground up using Python and OpenGL. It features basic tower placement and enemy waves. The project is still in early development.",
+    "status": "Active development",
+    "repoLink": ""
+  },
+  {
     "title": "Jordle",
     "shortDescription": "Wordle clone with new game modes and leaderboards",
     "imageUrl": "Images/Jordle.png",
@@ -183,7 +194,7 @@
     "projectType": "Discord Embedded Application",
     "languagesUsed": ["HTML", "CSS", "JavaScript", "TypeScript"],
     "longDescription": "Jordle is a Discord-based Wordle clone featuring leaderboards, difficulty modes, and free-play options. Built with the Discord Embedded SDK.",
-    "status": "In Progress",
+    "status": "Inactive",
     "repoLink": ""
   },
   {
