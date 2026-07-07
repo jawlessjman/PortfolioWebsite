@@ -132,6 +132,17 @@
     "repoLink": "https://github.com/jawlessjman/PassivePowers"
   },
   {
+    "title" : "Dwarven Storage",
+    "shortDescription": "Mod for Valheim that adds a mass storage system to Valheim",
+    "imageUrl": "Images/DwarvenStorage.jpg",
+    "authors": ["Jared Johnston"],
+    "projectType": "Valheim mod",
+    "languagesUsed": ["C#", "BepinEx"],
+    "longDescription": "Dwarven Storage is a Valheim mod that adds a mass storage system to Valheim. It is built using C# and the BepinEx modding framework. The project is completed and available on Nexus Mods.",
+    "status": "Completed",
+    "repoLink": "https://github.com/jawlessjman/DwarvenStorage"
+  },
+  {
     "title" : "RageNAdrenaline",
     "shortDescription": "Mod for Valheim that brings the adrenaline and rage mechanics from Terraria's Calamity mod into Valheim.",
     "imageUrl": "Images/RageNAdrenaline.jpg",
