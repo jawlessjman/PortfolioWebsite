@@ -18,7 +18,7 @@
     "authors": ["Jared Johnston"],
     "projectType": "Discord.py Discord Bot",
     "languagesUsed": ["Python", "MongoDB"],
-    "longDescription": "JawlessBot is a verified Discord bot that allows for playing media in voice calls, basic administrative actions such as banning, kicking, and warning users, and other fun commands. It is hosted using AWS and in continuous development since March 2024.",
+    "longDescription": "JawlessBot is a verified Discord bot that allows for playing media in voice calls, basic administrative actions such as banning, kicking, and warning users, and other fun commands. It is hosted using Railway and in continuous development since March 2024.",
     "status": "Active development",
     "repoLink": "https://github.com/jawlessjman/Jawless_bot",
     "extraLinks": []
