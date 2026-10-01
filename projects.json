@@ -8,7 +8,8 @@
     "languagesUsed": ["C#", "Unity"],
     "longDescription": "This is a 2D Metroidvania game that is a passion project between me and a friend. We have been working on it for a couple years but only on our off time.",
     "status": "In progress",
-    "repoLink": ""
+    "repoLink": "",
+    "extraLinks": []
   },
   {
     "title": "JawlessBOT",
@@ -19,7 +20,8 @@
     "languagesUsed": ["Python", "MongoDB"],
     "longDescription": "JawlessBot is a verified Discord bot that allows for playing media in voice calls, basic administrative actions such as banning, kicking, and warning users, and other fun commands. It is hosted using AWS and in continuous development since March 2024.",
     "status": "Active development",
-    "repoLink": "https://github.com/jawlessjman/Jawless_bot"
+    "repoLink": "https://github.com/jawlessjman/Jawless_bot",
+    "extraLinks": []
   },
   {
     "title": "FNAF Recreation",
@@ -30,7 +32,8 @@
     "languagesUsed": ["Unreal Engine 5.7", "C++"],
     "longDescription": "This is a recreation of the original Five Nights at Freddy's game using Unreal Engine 5.7. It is being built to learn Unreal Engine and game development principles. The project is still in active development.",
     "status": "In Progress",
-    "repoLink": ""
+    "repoLink": "",
+    "extraLinks": []
   },
   {
     "title": "OpenGL TileMapEditor",
@@ -41,7 +44,8 @@
     "languagesUsed": ["C++", "C", "OpenGL"],
     "longDescription": "This OpenGL tile map editor is designed for creating 2D grid-based tile maps. It was created to learn OpenGL and help develop a game. The project is no longer being worked on.",
     "status": "Inactive",
-    "repoLink": "https://github.com/jawlessjman/LearnNerdTileMapEditor"
+    "repoLink": "https://github.com/jawlessjman/LearnNerdTileMapEditor",
+    "extraLinks": []
   },
   {
     "title": "Swift HTTP",
@@ -52,7 +56,8 @@
     "languagesUsed": ["Swift"],
     "longDescription": "This Swift package simplifies making HTTP requests. It was created to reduce code repetition in different Swift projects. It will be made public once stable.",
     "status": "In progress",
-    "repoLink": ""
+    "repoLink": "",
+    "extraLinks": []
   },
   {
     "title": "FormatX -> Go",
@@ -63,7 +68,8 @@
     "languagesUsed": ["React-Native", "Expo", "TypeScript", "JavaScript"],
     "longDescription": "FormatX -> Go is a mobile frontend for FormatX, a tool for merging, splitting, and converting PDFs. It allows users to manipulate PDFs on mobile. Currently in active development.",
     "status": "In progress",
-    "repoLink": ""
+    "repoLink": "",
+    "extraLinks": []
   },
   {
     "title": "Swift Memory Game",
@@ -74,7 +80,8 @@
     "languagesUsed": ["Swift"],
     "longDescription": "A native iOS memory card game where players must match identical cards within limited attempts. Includes a leaderboard. Not completed or in development.",
     "status": "Inactive",
-    "repoLink": "https://github.com/jawlessjman/SwiftMemoryGame"
+    "repoLink": "https://github.com/jawlessjman/SwiftMemoryGame",
+    "extraLinks": []
   },
   {
     "title": "JawlessBOT - Website",
@@ -85,7 +92,8 @@
     "languagesUsed": ["HTML", "CSS", "JavaScript"],
     "longDescription": "Website hosting the privacy policy and terms for JawlessBOT, hosted on GitHub Pages. Future updates will add server-specific bot options.",
     "status": "Completed",
-    "repoLink": "https://github.com/jawlessjman/JawlessBOT"
+    "repoLink": "https://github.com/jawlessjman/JawlessBOT",
+    "extraLinks": []
   },
   {
     "title": "Sir Roland's Tower Quest",
@@ -96,7 +104,8 @@
     "languagesUsed": ["Python"],
     "longDescription": "Sir Roland's Tower Quest is a text-based RPG based on my grade 11 final project, rebuilt with improved code and design.",
     "status": "Completed",
-    "repoLink": "https://github.com/jawlessjman/Sir-Roland-s-Tower-Quest"
+    "repoLink": "https://github.com/jawlessjman/Sir-Roland-s-Tower-Quest",
+    "extraLinks": []
   },
   {
     "title": "DeepSeek Discord Bot",
@@ -107,7 +116,8 @@
     "languagesUsed": ["Python"],
     "longDescription": "A Discord bot that connects to a local DeepSeek instance via Ollama, allowing chat-based interactions through Discord commands.",
     "status": "Completed",
-    "repoLink": "https://github.com/jawlessjman/Discord-DeepSeek-bot"
+    "repoLink": "https://github.com/jawlessjman/Discord-DeepSeek-bot",
+    "extraLinks": []
   },
   {
     "title" : "InfiniteAmmoGunz",
@@ -118,7 +128,8 @@
     "languagesUsed": ["C#", "BepinEx"],
     "longDescription": "InfiniteAmmoGunz is a Valheim mod that provides infinite ammunition for guns from the `GunzNBullets` mod. It is built using C# and the BepinEx modding framework. The project is completed and available on Nexus Mods and Thunderstore.",
     "status": "Completed",
-    "repoLink": "https://github.com/jawlessjman/InfiniteAmmoGunz"
+    "repoLink": "https://github.com/jawlessjman/InfiniteAmmoGunz",
+    "extraLinks": ["https://www.nexusmods.com/valheim/mods/3357", "https://thunderstore.io/c/valheim/p/Jawlessjman665/InfiniteAmmoGunz/"]
   },
   {
     "title" : "Passive Powers",
@@ -129,7 +140,8 @@
     "languagesUsed": ["C#", "BepinEx"],
     "longDescription": "Passive Powers is a Valheim mod that grants players unique passive abilities inspired by the forsaken powers. It is built using C# and the BepinEx modding framework. The project is completed and available on Nexus Mods and Thunderstore.",
     "status": "Completed",
-    "repoLink": "https://github.com/jawlessjman/PassivePowers"
+    "repoLink": "https://github.com/jawlessjman/PassivePowers",
+    "extraLinks": ["https://www.nexusmods.com/valheim/mods/3359", "https://thunderstore.io/c/valheim/p/Jawlessjman665/PassivePowers/"]
   },
   {
     "title" : "Dwarven Storage",
@@ -140,7 +152,8 @@
     "languagesUsed": ["C#", "BepinEx"],
     "longDescription": "Dwarven Storage is a Valheim mod that adds a mass storage system to Valheim. It is built using C# and the BepinEx modding framework. The project is completed and available on Nexus Mods and Thunderstore.",
     "status": "Completed",
-    "repoLink": "https://github.com/jawlessjman/DwarvenStorage"
+    "repoLink": "https://github.com/jawlessjman/DwarvenStorage",
+    "extraLinks": ["https://www.nexusmods.com/valheim/mods/3440", "https://thunderstore.io/c/valheim/p/Jawlessjman665/DwarvenStorage/"]
   },
   {
     "title" : "RageNAdrenaline",
@@ -151,7 +164,8 @@
     "languagesUsed": ["C#", "BepinEx"],
     "longDescription": "RageNAdrenaline is a Valheim mod that introduces adrenaline and rage mechanics from Terraria's Calamity mod. It is built using C# and the BepinEx modding framework. The project is completed and available on Nexus Mods and Thunderstore.",
     "status": "Completed",
-    "repoLink": "https://github.com/jawlessjman/RageNAdrenaline"
+    "repoLink": "https://github.com/jawlessjman/RageNAdrenaline",
+    "extraLinks": ["https://www.nexusmods.com/valheim/mods/3362", "https://thunderstore.io/c/valheim/p/Jawlessjman665/RageNAdrenaline/"]
   },
   {
     "title" : "MoreArmorBonuses",
@@ -162,7 +176,8 @@
     "languagesUsed": ["C#", "BepinEx"],
     "longDescription": "MoreArmorBonuses is a Valheim mod that adds additional armour set bonuses and the ability to add custom armour set bonuses. It is built using C# and the BepinEx modding framework. The project is completed and available on Nexus Mods and Thunderstore.",
     "status": "Completed",
-    "repoLink": "https://github.com/jawlessjman/MoreArmorBonuses"
+    "repoLink": "https://github.com/jawlessjman/MoreArmorBonuses",
+    "extraLinks": ["https://www.nexusmods.com/valheim/mods/3368", "https://thunderstore.io/c/valheim/p/Jawlessjman665/MoreArmorBonuses/"]
   },
   {
     "title" : "Grip of the God of Thunder",
@@ -173,7 +188,8 @@
     "languagesUsed": ["C#", "BepinEx"],
     "longDescription": "Grip of the God of Thunder is a Valheim mod that allows the user to use two-handed weapons with only one hand. It is built using C# and the BepinEx modding framework. The project is completed and available on Nexus Mods.",
     "status": "Completed",
-    "repoLink": ""
+    "repoLink": "",
+    "extraLinks": ["https://www.nexusmods.com/valheim/mods/4059"]
   },
   {
     "title": "Smart Crafting Display",
@@ -184,7 +200,8 @@
     "languagesUsed": ["Java", "Forge"],
     "longDescription": "Smart Crafting Display is a Minecraft Forge mod that adds an overlay showing required crafting materials and progress. Still in active development.",
     "status": "In Progress",
-    "repoLink": ""
+    "repoLink": "",
+    "extraLinks": []
   },
   {
     "title": "Brick Bronze Auto",
@@ -195,7 +212,8 @@
     "languagesUsed": ["Python", "PyTorch"],
     "longDescription": "This Python program automates capturing legendary Pokémon by identifying encounters and responding accordingly. Uses PyTorch and webhooks.",
     "status": "In Progress",
-    "repoLink": ""
+    "repoLink": "",
+    "extraLinks": []
   },
   {
     "title": "ProjectTD",
@@ -206,7 +224,8 @@
     "languagesUsed": ["Python", "PyOpenGL", "OpenGL"],
     "longDescription": "ProjectTD is a tower defense game built from the ground up using Python and OpenGL. It features basic tower placement and enemy waves. The project is still in early development.",
     "status": "Active development",
-    "repoLink": ""
+    "repoLink": "",
+    "extraLinks": []
   },
   {
     "title": "Jordle",
@@ -217,7 +236,8 @@
     "languagesUsed": ["HTML", "CSS", "JavaScript", "TypeScript"],
     "longDescription": "Jordle is a Discord-based Wordle clone featuring leaderboards, difficulty modes, and free-play options. Built with the Discord Embedded SDK.",
     "status": "Inactive",
-    "repoLink": ""
+    "repoLink": "",
+    "extraLinks": []
   },
   {
     "title": "My Portfolio Website",
@@ -228,7 +248,8 @@
     "languagesUsed": ["HTML", "CSS", "JavaScript"],
     "longDescription": "My portfolio website containing details about me, projects I’ve built, and my resume. You’re currently viewing it!",
     "status": "Completed",
-    "repoLink": "https://github.com/jawlessjman/PortfolioWebsite"
+    "repoLink": "https://github.com/jawlessjman/PortfolioWebsite",
+    "extraLinks": []
   },
   {
     "title": "Payulator",
@@ -239,6 +260,7 @@
     "languagesUsed": ["TypeScript", "C#", "React-Native", "MongoDB", "Docker"],
     "longDescription": "Payulator is a full-stack expense management tool using a C# backend and a React Native frontend built with Expo. Designed for group expense tracking.",
     "status": "In progress",
-    "repoLink": ""
+    "repoLink": "",
+    "extraLinks": []
   }
 ]

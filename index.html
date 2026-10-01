@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="bootstrap.css">
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" href="Images/favicon.png" type="image/png">
-    <title>Home</title>
+    <title>Jared Johnston — Developer</title>
 </head>
 <body class="page-container d-flex flex-column">
 <div class="container flex-grow-1 d-flex flex-column py-3">
@@ -28,47 +28,47 @@
     </header>
 
     <main class="flex-grow-1">
-        <section class="hero glass-card">
-            <div class="row align-items-center g-4">
-                <div class="col-12 col-md-auto text-center text-md-start">
-                    <img class="avatar mb-3" src="Images/Default.png" alt="Portrait of Jared Johnston">
-                </div>
-                <div class="col">
-                    <div class="pill mb-3"><span class="pill-dot"></span> Mobile Computing @ Sheridan College</div>
-                    <h1 class="fw-bold mb-3">Hi, I'm Jared Johnston.</h1>
+        <section class="hero">
+            <div class="hero-layout">
+                <div>
+                    <div class="eyebrow">Mobile Computing @ Sheridan College</div>
+                    <h1><span>Hi, I'm</span> Jared Johnston.</h1>
                     <p class="lead subtle-text mb-4">
                         4th year Computer Science student focused on building well designed mobile experiences,
                         video games, and development tools.
                     </p>
                     <div class="d-flex flex-wrap gap-2">
-                        <a class="btn btn-glow" href="projects.html">View Projects</a>
+                        <a class="btn btn-primary-custom" href="projects.html">View Projects <span class="button-arrow" aria-hidden="true">↗</span></a>
                         <a class="btn btn-ghost" href="https://www.linkedin.com/in/jared-johnston-b11290301/" target="_blank" rel="noopener noreferrer">Resume</a>
                     </div>
                 </div>
+                <figure class="hero-portrait">
+                    <img class="avatar" src="Images/Default.jpg" alt="Portrait of Jared Johnston" width="260" height="260">
+                </figure>
             </div>
         </section>
 
         <section class="section-gap">
             <div class="section-heading">
-                <h5 class="mb-0 text-uppercase text-muted">What I build</h5>
+                <h2 class="mb-0 text-uppercase text-muted">What I build</h2>
                 <span></span>
             </div>
             <div class="row g-3">
                 <div class="col-12 col-md-4">
-                    <div class="stat-tile h-100">
-                        <h6 class="mb-1">Mobile and Web Apps</h6>
+                    <div class="stat-tile h-100"><span class="section-number" aria-hidden="true">01</span>
+                        <h3 class="mb-1">Mobile and Web Apps</h3>
                         <p class="mb-0 subtle-text">React Native and Swift with a focus on smooth user flows.</p>
                     </div>
                 </div>
                 <div class="col-12 col-md-4">
-                    <div class="stat-tile h-100">
-                        <h6 class="mb-1">Bots & Tools</h6>
+                    <div class="stat-tile h-100"><span class="section-number" aria-hidden="true">02</span>
+                        <h3 class="mb-1">Bots & Tools</h3>
                         <p class="mb-0 subtle-text">Discord bots, swift HTTP helpers, and developer utilities.</p>
                     </div>
                 </div>
                 <div class="col-12 col-md-4">
-                    <div class="stat-tile h-100">
-                        <h6 class="mb-1">Games & 3D</h6>
+                    <div class="stat-tile h-100"><span class="section-number" aria-hidden="true">03</span>
+                        <h3 class="mb-1">Games & 3D</h3>
                         <p class="mb-0 subtle-text">Unreal, Unity, and OpenGL creating immersive experiences.</p>
                     </div>
                 </div>
@@ -76,15 +76,13 @@
         </section>
 
         <section class="section-gap">
-            <div class="glass-card p-4">
-                <div class="d-flex flex-wrap justify-content-between align-items-center gap-3">
-                    <div>
-                        <div class="pill mb-2"><span class="pill-dot"></span> Currently Working On</div>
-                        <h4 class="mb-1">Mobile and Web Development</h4>
-                        <p class="subtle-text mb-0">Experimenting and working on React Native and web applications, and improving my current websites.</p>
-                    </div>
-                    <a class="btn btn-glow" href="projects.html">View All Projects</a>
+            <div class="current-work">
+                <div>
+                    <div class="eyebrow">Currently Working On</div>
+                    <h2 class="mb-2">Mobile and Web Development</h2>
+                    <p class="subtle-text mb-0">Experimenting and working on React Native and web applications, and improving my current websites.</p>
                 </div>
+                <a class="text-link" href="projects.html">View All Projects <span class="button-arrow" aria-hidden="true">↗</span></a>
             </div>
         </section>
     </main>
