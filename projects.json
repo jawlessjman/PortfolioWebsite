@@ -116,7 +116,7 @@
     "authors": ["Jared Johnston"],
     "projectType": "Valheim mod",
     "languagesUsed": ["C#", "BepinEx"],
-    "longDescription": "InfiniteAmmoGunz is a Valheim mod that provides infinite ammunition for guns from the `GunzNBullets` mod. It is built using C# and the BepinEx modding framework. The project is completed and available on Nexus Mods.",
+    "longDescription": "InfiniteAmmoGunz is a Valheim mod that provides infinite ammunition for guns from the `GunzNBullets` mod. It is built using C# and the BepinEx modding framework. The project is completed and available on Nexus Mods and Thunderstore.",
     "status": "Completed",
     "repoLink": "https://github.com/jawlessjman/InfiniteAmmoGunz"
   },
@@ -127,7 +127,7 @@
     "authors": ["Jared Johnston"],
     "projectType": "Valheim mod",
     "languagesUsed": ["C#", "BepinEx"],
-    "longDescription": "Passive Powers is a Valheim mod that grants players unique passive abilities inspired by the forsaken powers. It is built using C# and the BepinEx modding framework. The project is completed and available on Nexus Mods.",
+    "longDescription": "Passive Powers is a Valheim mod that grants players unique passive abilities inspired by the forsaken powers. It is built using C# and the BepinEx modding framework. The project is completed and available on Nexus Mods and Thunderstore.",
     "status": "Completed",
     "repoLink": "https://github.com/jawlessjman/PassivePowers"
   },
@@ -138,7 +138,7 @@
     "authors": ["Jared Johnston"],
     "projectType": "Valheim mod",
     "languagesUsed": ["C#", "BepinEx"],
-    "longDescription": "Dwarven Storage is a Valheim mod that adds a mass storage system to Valheim. It is built using C# and the BepinEx modding framework. The project is completed and available on Nexus Mods.",
+    "longDescription": "Dwarven Storage is a Valheim mod that adds a mass storage system to Valheim. It is built using C# and the BepinEx modding framework. The project is completed and available on Nexus Mods and Thunderstore.",
     "status": "Completed",
     "repoLink": "https://github.com/jawlessjman/DwarvenStorage"
   },
@@ -149,7 +149,7 @@
     "authors": ["Jared Johnston"],
     "projectType": "Valheim mod",
     "languagesUsed": ["C#", "BepinEx"],
-    "longDescription": "RageNAdrenaline is a Valheim mod that introduces adrenaline and rage mechanics from Terraria's Calamity mod. It is built using C# and the BepinEx modding framework. The project is completed and available on Nexus Mods.",
+    "longDescription": "RageNAdrenaline is a Valheim mod that introduces adrenaline and rage mechanics from Terraria's Calamity mod. It is built using C# and the BepinEx modding framework. The project is completed and available on Nexus Mods and Thunderstore.",
     "status": "Completed",
     "repoLink": "https://github.com/jawlessjman/RageNAdrenaline"
   },
@@ -160,9 +160,20 @@
     "authors": ["Jared Johnston"],
     "projectType": "Valheim mod",
     "languagesUsed": ["C#", "BepinEx"],
-    "longDescription": "MoreArmorBonuses is a Valheim mod that adds additional armour set bonuses and the ability to add custom armour set bonuses. It is built using C# and the BepinEx modding framework. The project is completed and available on Nexus Mods.",
+    "longDescription": "MoreArmorBonuses is a Valheim mod that adds additional armour set bonuses and the ability to add custom armour set bonuses. It is built using C# and the BepinEx modding framework. The project is completed and available on Nexus Mods and Thunderstore.",
     "status": "Completed",
     "repoLink": "https://github.com/jawlessjman/MoreArmorBonuses"
+  },
+  {
+    "title" : "Grip of the God of Thunder",
+    "shortDescription": "Valheim mod that allows the user to use two-handed weapons with only one hand.",
+    "imageUrl": "Images/OneHandedWeapons.png",
+    "authors": ["Jared Johnston"],
+    "projectType": "Valheim mod",
+    "languagesUsed": ["C#", "BepinEx"],
+    "longDescription": "Grip of the God of Thunder is a Valheim mod that allows the user to use two-handed weapons with only one hand. It is built using C# and the BepinEx modding framework. The project is completed and available on Nexus Mods.",
+    "status": "Completed",
+    "repoLink": ""
   },
   {
     "title": "Smart Crafting Display",
